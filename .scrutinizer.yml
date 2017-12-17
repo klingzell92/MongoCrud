@@ -1,19 +1,17 @@
 checks:
     javascript: true
 
-filter:
-    excluded_paths:
-        - coverage/*
-
 build:
+    environment:
+        mongodb: true
+
     dependencies:
-        #before:
-            #- npm install istanbul   # or add it as part of your package.json
+        before:
+            command: nvm install node
 
     tests:
         override:
             -
-                #command: 'istanbul cover --report clover test.js'
                 command: 'npm run test-scrutinizer'
                 coverage:
                     file: 'coverage/clover.xml'
