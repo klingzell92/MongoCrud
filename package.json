@@ -1,0 +1,36 @@
+{
+  "name": "mongocrud",
+  "version": "1.0.0",
+  "description": "Module that connects to mongodb and lets you perform crud operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint & npm run jscs & npm run unittest",
+    "unittest": "nyc --reporter=html --reporter=text mocha test/**/*.js",
+    "eslint": "node_modules/.bin/eslint .",
+    "jscs": "node_modules/.bin/jscs .",
+    "test-scrutinizer": "nyc --all --reporter=clover mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klingzell92/MongoCrud.git"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-plugin-react": "^7.5.1",
+    "js-yaml": "^3.10.0",
+    "jscs": "^3.0.7",
+    "jsonlint": "^1.6.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.0",
+    "supertest": "^3.0.0"
+  },
+  "author": "Philip Klingzell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klingzell92/MongoCrud/issues"
+  },
+  "homepage": "https://github.com/klingzell92/MongoCrud#readme"
+}

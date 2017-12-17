@@ -11,10 +11,11 @@ const ObjectId = require('mongodb').ObjectId;
 module.exports = (dsn, collection) => {
     var db;
     var col;
+
     /*Connect to the database and use the specified collection*/
     async function connect() {
-         db  =  await mongo.connect(dsn);
-         col = await db.collection(collection);
+        db  =  await mongo.connect(dsn);
+        col = await db.collection(collection);
     }
 
 
@@ -23,6 +24,7 @@ module.exports = (dsn, collection) => {
         async getAll() {
             await connect();
             const res = await col.find().toArray();
+
             await db.close();
             return res;
         },
@@ -38,6 +40,7 @@ module.exports = (dsn, collection) => {
         async find(id) {
             await connect();
             const result = await col.find({"_id": ObjectId(id)}).toArray();
+
             await db.close();
             return result;
         },
@@ -53,6 +56,12 @@ module.exports = (dsn, collection) => {
         async delete(id) {
             await connect();
             col.remove({  "_id": ObjectId(id) });
+            await db.close();
+        },
+        /* Delete everything in the collection */
+        async deleteAll() {
+            await connect();
+            col.remove();
             await db.close();
         }
     };
