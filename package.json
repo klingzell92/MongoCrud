@@ -2,7 +2,7 @@
   "name": "mongodb-crud-phkl16",
   "version": "1.0.0",
   "description": "Module that connects to mongodb and lets you perform crud operations",
-  "main": "index.js",
+  "main": "src/crud.js",
   "scripts": {
     "test": "npm run eslint & npm run jscs & npm run unittest",
     "unittest": "nyc --reporter=html --reporter=text mocha test/**/*.js",
