@@ -1,6 +1,5 @@
-[![Build Status](https://scrutinizer-ci.com/g/klingzell92/MongoCrud/badges/build.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/MongoCrud/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/klingzell92/ramverk2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/ramverk2/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/klingzell92/MongoCrud/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/MongoCrud/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/klingzell92/mongodb-crud-phkl16/badges/build.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/mongodb-crud-phkl16/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/klingzell92/mongodb-crud-phkl16/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/mongodb-crud-phkl16/?branch=master)
 
 mongodb-crud-phkl16
 ====================
@@ -22,7 +21,7 @@ Example
 -------------
 ```javascript
 // Get all documents from the collection
-let result = crud.getAll();
+let result = mongocrud.getAll();
 
 // Add a document to the collection
 let movie = {
@@ -31,10 +30,10 @@ let movie = {
     release: 2017
 };
 
-crud.create(movie);
+mongocrud.create(movie);
 
 // Get a document from the collection
-let result = crud.find(id);
+let result = mongocrud.find(id);
 
 // Update a document from the collection
 let movie = {
@@ -43,11 +42,11 @@ let movie = {
     release: 2017
 };
 
-crud.update(id, movie);
+mongocrud.update(id, movie);
 
 // Delete a document from the collection
-crud.delete(id);
+mongocrud.delete(id);
 
 // Delete everything in the collection
-crud.delteAll();
+mongocrud.delteAll();
 ```
