@@ -30,7 +30,7 @@ module.exports = (dsn, collection) => {
         },
 
         /* Add a document to the collection */
-        async create(oject) {
+        async create(object) {
             await connect();
             col.insert(object);
             await db.close();
@@ -58,7 +58,7 @@ module.exports = (dsn, collection) => {
             col.remove({  "_id": ObjectId(id) });
             await db.close();
         },
-        
+
         /* Delete everything in the collection */
         async deleteAll() {
             await connect();

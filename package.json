@@ -1,5 +1,5 @@
 {
-  "name": "mongocrud",
+  "name": "mongodb-crud-phkl16",
   "version": "1.0.0",
   "description": "Module that connects to mongodb and lets you perform crud operations",
   "main": "index.js",

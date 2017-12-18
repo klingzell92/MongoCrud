@@ -2,19 +2,19 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/klingzell92/ramverk2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/ramverk2/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/klingzell92/MongoCrud/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/klingzell92/MongoCrud/?branch=master)
 
-MongoCrud
+mongodb-crud-phkl16
 ====================
 Module that connects to MongoDB and handles CRUD operations
 
 Getting started
 --------------
-To install mongocrud simply run this in your command prompt.
+To install mongodb-crud-phkl16 simply run this in your command prompt.
 ```shell
-npm install mongocrud
+npm install mongodb-crud-phkl16
 ```
-To import mongocrud in your code use require like so.
+To import mongodb-crud-phkl16 in your code use require like so.
 ```javascript
-const mongocrud = require('mongocrud')('mongodb://localhost:27017/collection', 'collection');
+const mongocrud = require('mongodb-crud-phkl16')('mongodb://localhost:27017/collection', 'collection');
 ```
 Where the first parameter is the dsn and the other parameter the collection to use.
 
