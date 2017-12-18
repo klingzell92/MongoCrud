@@ -30,9 +30,9 @@ module.exports = (dsn, collection) => {
         },
 
         /* Add a document to the collection */
-        async create(movie) {
+        async create(oject) {
             await connect();
-            col.insert(movie);
+            col.insert(object);
             await db.close();
         },
 
@@ -46,9 +46,9 @@ module.exports = (dsn, collection) => {
         },
 
         /* Update a document from the collection */
-        async update(id, movie) {
+        async update(id, object) {
             await connect();
-            col.update({  "_id": ObjectId(id) }, movie);
+            col.update({  "_id": ObjectId(id) }, object);
             await db.close();
         },
 
@@ -58,6 +58,7 @@ module.exports = (dsn, collection) => {
             col.remove({  "_id": ObjectId(id) });
             await db.close();
         },
+        
         /* Delete everything in the collection */
         async deleteAll() {
             await connect();
