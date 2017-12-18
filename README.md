@@ -11,6 +11,7 @@ To install mongodb-crud-phkl16 simply run this in your command prompt.
 ```shell
 npm install mongodb-crud-phkl16
 ```
+
 To import mongodb-crud-phkl16 in your code use require like so.
 ```javascript
 const mongocrud = require('mongodb-crud-phkl16')('mongodb://localhost:27017/collection', 'collection');
