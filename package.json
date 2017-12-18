@@ -1,6 +1,6 @@
 {
   "name": "mongodb-crud-phkl16",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module that connects to mongodb and lets you perform crud operations",
   "main": "src/crud.js",
   "scripts": {
